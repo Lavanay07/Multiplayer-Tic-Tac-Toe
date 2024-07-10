@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2.4rem; /* 1.2 times the original size (2rem) */
+  margin-top: 2.3rem; /* Adjust margin-top to bring it closer to the boxes */
+}
+
+body {
+  /* background-color: #548687; */
+  background-color: #755139FF;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  margin-bottom: 2rem; /* Space between game and message container */
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  /* background-color: #ffffc7; */
+  background-color: #F2EDD7FF;
+  
+  transition: transform 0.3s ease;
+}
+
+.msg-container {
+  margin-bottom: 2rem; /* Space between message and button container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem; /* Space between messages */
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+p{
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+#reset-btn, #new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 2rem; /* Adjust margin-top to add space */
+  margin-bottom: 2rem; /* Adjust margin-bottom to add space */
+  cursor: pointer;
+}
+.box:hover{
+  background-color: #e0e0e0;
+  
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.box.x {
+  color: red; /* Color for X */
+}
+
+.box.o {
+  color: green; /* Color for O */
+}
